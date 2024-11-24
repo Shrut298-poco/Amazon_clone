@@ -1,0 +1,298 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+            display: flex;
+
+        }
+.first{
+            background-color: rgb(255, 162, 80);
+            height: 200px;
+            width: 500px;
+            border-radius: 3px;
+            margin: 10px;
+            line-height: 1.;
+            padding: 10px;
+           font-weight: bold;
+        }
+        .container2{
+            display: flex;
+        }
+        .second{
+            background-color: white;
+            margin: 5px;
+            flex-direction: column;
+            width: 150px;
+            height: 30px;
+        
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .container3{
+            display: flex;
+            
+        }
+        .third{
+            background-color: rgba(255, 255, 255, 0.377);
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            height: 30px;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+           
+        }
+        .container4{
+            display: flex;
+            
+        }
+        .fourth{
+            background-color: rgba(255, 255, 255, 0.255);
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            height: 30px;
+            
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+           
+        }
+        .container5{
+            display: flex;
+            
+        }
+        .fifth{
+            background-color:rgb(80, 197, 255);
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 30px;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            
+            font-weight: bold;
+            
+           
+        }
+        .container6{
+            display: flex;
+            
+        }
+        .sixth{
+            background-color:rgb(217, 255, 80);
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 30px;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            
+            font-weight: bold;
+        } 
+       div{
+            height: 500px;
+            width: 100%;
+            background-color: blue;
+        }
+        div:active{
+            background-image: url(image.jpg.jpg);
+        }
+        @media(min-width:900px){
+            div{
+              background-image: url(shrut.jpg.jpg);
+              background-size: cover;
+            }
+           
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="first">1
+            <div class="container2">
+            <div class="second">1</div>
+            <div class="second">2</div>
+            <div class="second">3</div>
+        </div>
+        <div class="container3">
+            <div class="third">1</div>
+            <div class="third">2</div>
+            <div class="third">3</div>
+            <div class="third">4</div>
+        </div>
+        <div class="container4">
+            <div class="fourth">1</div>
+            <div class="fourth">2</div>
+            <div class="fourth">3</div>
+            <div class="fourth">4</div>
+            <div class="fourth">5</div>
+        </div>
+
+        </div>
+        <div class="first">2</div>
+        <div class="first">3</div>
+    </div>
+    <div class="container5">
+        <div class="fifth">1</div>
+        <div class="fifth">2</div>
+        <div class="fifth">3</div>
+        <div class="fifth">4</div>
+    </div>
+    <div class="container6">
+        <div class="sixth">1</div>
+        <div class="sixth">2</div>
+        <div class="sixth">3</div>
+        <div class="sixth">4</div>
+        <div class="sixth">5</div>
+    </div>  
+     
+   <div> </div>
+
+   <!-- tranistion -->
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        background-color: darkgoldenrod;
+
+        transition-property: all;
+        display: flex;
+
+    }
+
+    body:active {
+        color: orchid;
+        transition-delay: 3s;
+        transition-timing-function: steps(4);
+        background-color: grey;
+    }
+
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        border: 5px solid black;
+        border-radius: 10%;
+        transition-property: all;
+        transition-duration: 2s;
+        font-size: 20px;
+        color: white;
+
+        margin-top: 100px;
+        margin-left: 500px;
+
+
+
+
+    }
+
+    div:hover {
+        background-color: chartreuse;
+        font-size: 30px;
+        transition-timing-function: ease-out;
+        transform: rotate(360deg);
+        transform: translateY(300px);
+        transform: skew(360deg);
+
+
+    }
+
+    div:active {
+        background-color: cornflowerblue;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition-timing-function: ease-in;
+
+        transform: scale(1.5);
+        transform: translatex(300px);
+    }
+
+    h2 {
+        color: white;
+        margin-top: 400px;
+
+    }
+
+    span {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 5px solid black;
+        border-top: 5px solid white;
+
+
+        position: absolute;
+        top: 500px;
+        animation: loader 1s ease-in 0s infinite;
+
+    }
+
+    @keyframes loader {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+
+    }
+    .navbar{
+        height: 60px;
+        background-color: #0f1111;
+        color: white;
+    }
+
+    .nav_logo {
+        height: 50px;
+        width: 100px;
+
+    }
+
+    .logo {
+        height: 50px;
+        width: 100%;
+        background-image: url(amazon_logo.png);
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <h1>tranistion</h1>
+    <div> Hye!!..</div>
+    <h2 style="font-size: 50px;">animation</h2>
+    <span></span>
+    <div>
+        <div class="nav_logo ">
+            <div class="logo">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
